@@ -1,0 +1,81 @@
+# Workshop de Engenharia Social: Gestão Ágil de Estoque Comunitário
+**Disciplina:** Extensão - Cooperação, Humanismo Solidário, Redes e Comunidades  
+**Curso:** Engenharia de Software / Tecnologia da Informação — UCB (2026/2)  
+**Projeto:** Solução Digital para Organização e Gestão de Estoque de Pequenos Empreendedores  
+
+---
+
+## 1. Contexto e Análise Dialética da Realidade (Tese, Antítese e Síntese)
+
+* **Tese (Realidade Local / Demanda Concreta):**  
+  Empreendimento independente no DF gerido por profissional técnica (engenheira aeroespacial autônoma com loja de peças, modelos e protótipos especializados). A gestão é sobrecarregada por demandas operacionais de fabricação e atendimento, acumulando anotações manuais, mensagens de WhatsApp dispersas e cadernos com registros de insumos.
+* **Antítese (A Barreira do Software Comercial):**  
+  Sistemas de ERP e gestão comercial de prateleira são excessivamente caros (mensalidades incompatíveis com micro e pequenos negócios), complexos, exigem computadores dedicados, homologações fiscais burocráticas e sobrecarregam cognitivamente o usuário com dezenas de menus desnecessários.
+* **Síntese (Tecnologia Social UCB):**  
+  Uma solução web progressiva (PWA), hiperintuitiva, gratuita e responsiva para celular. Foco estrito nas 4 operações essenciais: cadastrar, consultar, atualizar saldo de itens e alertar níveis críticos em apenas um toque, devolvendo tempo para a atividade produtiva principal.
+
+---
+
+## 2. Etapa 1: Autópsia do Problema & Persona Social (25 min)
+
+### 2.1 Persona Comunitária / Usuária-Chave
+* **Nome e Idade:** Yasmin da Costa, 31 anos.
+* **Ocupação:** Engenheira Aeroespacial e Microempreendedora.
+* **Escolaridade:** Superior Completo (alto letramento geral, porém operando em regime de sobrecarga física e escassez crônica de tempo para burocracias de TI).
+* **Dispositivo / Conectividade:** Celular intermediário, operando com frequência no balcão da oficina em rede Wi-Fi que oscila perto do maquinário; manuseio com mãos ocupadas ou sujas de oficina.
+* **Bloqueio / Ansiedade Operacional:** Ansiedade provocada pela perda de vendas por não saber se determinado filamento/peça está realmente em estoque sem ter de parar o trabalho para vasculhar prateleiras físicas. Frustração profunda com interfaces corporativas pesadas e lentas.
+* **Alívio Esperado com o Software:** Localizar qualquer item por nome ou código rápido em menos de 10 segundos e dar baixa/entrada de peças em 1 clique direto na tela do celular.
+
+### 2.2 Autópsia dos Gargalos Centrais (Fluxo Manual Atual)
+1. **Gargalo 1 — Furo de Estoque e Venda Cega:** Registro de vendas efetuado em blocos de anotações ou chat de mensagens. Falta de sincronia imediata gera vendas duplicadas ou atrasos por falta de reposição de matéria-prima.
+2. **Gargalo 2 — Exaustão Noturna com Balanço:** Dedicação de até 4 horas semanais no final do expediente para conferir caixas e atualizar cadernos, gerando sobrecarga mental e roubando o tempo de descanso/estudo técnico da empreendedora.
+
+---
+
+## 3. Etapa 2: Matriz de Ação & Wireframe em Papel (35 min)
+
+### 3.1 Mapeamento da Jornada do Usuário em 3 Atos
+* **Ato 1 (Chegada / Consulta Imediata):**  
+  A empreendedora recebe uma consulta de cliente ou fornecedor na loja. Abre a aplicação no celular em menos de 2 segundos; a interface já inicializa com cursor na barra de busca de alto contraste.
+* **Ato 2 (Operação Fluida / Baixa ou Entrada):**  
+  Digita apenas 3 letras do produto (ex: `FIL` para Filamento). O cartão do item surge grande na tela com o saldo atual visível (`Saldo: 4 un`). Dois botões grandes e separados permitem adicionar (`+1`) ou retirar (`-1`) sem formulários intermediários.
+* **Ato 3 (Conclusão com Dignidade e Alívio Cognitivo):**  
+  A tela emite feedback visual claro e acolhedor: *"Atualizado! Agora você tem 3 unidades em estoque."* Sem telas de carregamento travadas, a empreendedora volta a atender o cliente instantaneamente com segurança do seu saldo.
+
+---
+
+### 3.2 Especificação do Wireframe (Paper Prototype / Terminal View)
+
+*Diretrizes de Acessibilidade Adotadas:* Tipografia $\ge$ 20px, botões $\ge$ 56px de altura com espaçamento seguro contra toques acidentais, contraste de cores AAA ($\ge$ 7:1) e vocabulário 100% em língua portuguesa.
+
+```text
++-------------------------------------------------------+
+|  [ = ]   OFICINA & ESTOQUE DIGITAL          ( Online )|
++-------------------------------------------------------+
+|                                                       |
+|  BUSCAR PRODUTO OU PEÇA:                              |
+|  +-------------------------------------------------+  |
+|  |  [ Lupa ]  Digite nome ou código...             |  | <- Altura: 56px
+|  +-------------------------------------------------+  |    Fonte: 20px
+|                                                       |
+|  PRODUTO LOCALIZADO:                                  |
+|  +-------------------------------------------------+  |
+|  |  FILAMENTO PLA 1.75MM - PRETO                   |  |
+|  |  Local: Prateleira B2                           |  | <- Card Limpo
+|  |                                                 |  |    Contraste 7:1
+|  |  QUANTIDADE ATUAL EM ESTOQUE:                   |  |
+|  |                                                 |  |
+|  |                  [  08 un  ]                    |  | <- Destaque (32px)
+|  |                                                 |  |
+|  |  AJUSTAR QUANTIDADE RÁPIDA:                     |  |
+|  |  +---------------------+ +--------------------+ |  |
+|  |  |   - 1  RETIRAR      | |   + 1  ADICIONAR   | |  | <- Botões Altos
+|  |  |   (Venda / Uso)     | |   (Reposição)      | |  |    (Alt: 64px)
+|  |  +---------------------+ +--------------------+ |  |
+|  +-------------------------------------------------+  |
+|                                                       |
+|  [ + CADASTRAR NOVO PRODUTO ]                         | <- Ação Secundária
+|                                                       |
+|  FEEDBACK DE SEGURANÇA:                               |
+|  "Tudo certo! As alterações são salvas na hora."      | <- Feedback Humano
++-------------------------------------------------------+
