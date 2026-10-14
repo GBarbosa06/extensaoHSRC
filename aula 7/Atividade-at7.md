@@ -64,30 +64,21 @@ A proposta articula gestão hídrica, redução do consumo energético e aprovei
 
 ### Estimativa Orçamentária
 
-| Item | Origem / Aplicação | Valor (R$) |
-| --- | --- | --- |
-| Conexões hidráulicas e cola PVC (20 mm) | Comércio local de materiais de construção
+Conexões hidráulicas e cola PVC (20 mm): R$ 60,00 (adquiridas no comércio local de materiais de construção)
 
- | 60,00 |
-| Torneira de esfera e fita veda-rosca | Instalação no tambor de saída de água pluvial
+Torneira de esfera e fita veda-rosca: R$ 30,00 (para a saída de água pluvial do tambor)
 
- | 30,00 |
-| Tinta spray preto fosco | Pintura térmica dos condutores de PVC e chapas Tetra Pak
+Tinta spray preto fosco: R$ 28,00 (utilizada na pintura térmica dos canos de PVC e chapas Tetra Pak)
 
- | 28,00 |
-| Tela mosquiteiro de nylon e abraçadeiras | Proteção sanitária da cisterna
+Tela mosquiteiro de nylon e abraçadeiras: R$ 18,00 (vedação sanitária contra insetos na cisterna)
 
- | 18,00 |
-| Plastificação e suporte para manual | Fixação de guia físico ao lado do sistema
+Plastificação e suporte para o manual: R$ 14,00 (fixação do guia visual à prova d'água junto ao sistema)
 
- | 14,00 |
-| Bombona PEAD 200L e garrafas PET | Doação da comunidade e comércios parceiros
+Bombona PEAD de 200L e garrafas PET: R$ 0,00 (obtidas via doação da comunidade e comércios parceiros)   
 
- | 0,00 |
-| Embalagens Tetra Pak e sucata de PCs | Reúso interno da própria creche
+Embalagens Tetra Pak e sucata de PCs: R$ 0,00 (reaproveitamento interno de itens já presentes na creche)
 
- | 0,00 |
-| **Total** | **Abaixo do teto estipulado de R$ 250,00**<br> | **150,00** |
+Custo Total do Projeto: R$ 150,00 (respeitando o teto orçamentário de R$ 250,00 da atividade)   
 
 *Princípio Poka-Yoke:* Tubos de água de chuva identificados com anéis de fita azul e água pré-aquecida com anéis de fita vermelha, com conexões padronizadas para evitar acoplamento incorreto ou ferramentas raras de reparo.
 
